@@ -33,7 +33,7 @@ Activation Lock Status: Enabled
     self.assertIsInstance(result, DeviceCapabilities)
     self.assertEqual(result.model, "MacBook Pro")
     self.assertEqual(result.chip, "Apple M3 Max")
-    self.assertEqual(result.memory, 131072)  # 16 GB in MB
+    self.assertEqual(result.memory, 131072)  # 128 GB in MB
     self.assertEqual(
       str(result),
       "Model: MacBook Pro. Chip: Apple M3 Max. Memory: 131072MB. Flops: 14.20 TFLOPS, fp16: 28.40 TFLOPS, int8: 56.80 TFLOPS",
